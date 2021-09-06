@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FeaturesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--图片-->
+        <ImageView
+            android:id="@+id/test2"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@mipmap/ahu">
+
+        </ImageView>
+
+        <!--滚动视图-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--功能图标-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="70dp"
+                android:background="@color/white"
+                android:shrinkColumns="0,1,2"
+                android:stretchColumns="0,1,2"
+                android:paddingRight="5dp">
+
+                <!--第1行-->
+                <TableRow>
+                    <!--校历公告-->
+                    <Button
+                        android:id="@+id/btn_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawableTop="@mipmap/icon_scalendar"
+                        android:paddingTop="20dp"
+                        android:text="校历公告"
+                        android:textColor="@color/black"
+                        android:textSize="20dp">
+
+                    </Button>
+
+                    <!--校园网店-->
+                    <Button
+                        android:id="@+id/btn_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawableTop="@mipmap/icon_sonlineshop"
+                        android:paddingTop="20dp"
+                        android:text="校园网店"
+                        android:textColor="@color/black"
+                        android:textSize="20dp">
+
+                    </Button>
+
+                    <!--地图定位-->
+                    <Button
+                        android:id="@+id/btn_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawableTop="@mipmap/iocn_mapposition"
+                        android:paddingTop="20dp"
+                        android:text="地图定位"
+                        android:textColor="@color/black"
+                        android:textSize="20dp">
+
+                    </Button>
+                </TableRow>
+
+                <!--第2行-->
+                <TableRow>
+                    <!--图书馆-->
+                    <Button
+                        android:id="@+id/btn_library"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawableTop="@mipmap/icon_library"
+                        android:paddingTop="20dp"
+                        android:text="图书馆"
+                        android:textColor="@color/black"
+                        android:textSize="20dp">
+
+                    </Button>
+
+                    <!--教务系统-->
+                    <Button
+                        android:id="@+id/btn_esystem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawableTop="@mipmap/icon_esystem"
+                        android:paddingTop="20dp"
+                        android:text="教务系统"
+                        android:textColor="@color/black"
+                        android:textSize="20dp">
+
+                    </Button>
+
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

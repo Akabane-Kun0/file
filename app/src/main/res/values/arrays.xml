@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ctype">
+        <item>日常分享</item>
+        <item>宣讲会</item>
+        <item>兼职实习</item>
+        <item>失物招领</item>
+        <item>二手出售</item>
+    </string-array>
+</resources>

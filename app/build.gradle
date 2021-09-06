@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    //    **兼容Android6.0系统所需，如果这句话报错，可在dependencies标签下使用compile 'cn.bmob.android:http-legacy:1.0'**
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.example.xiaoyuanapp"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation files('libs\\BaiduLBS_Android.jar')
+    implementation files('libs\\IndoorscapeAlbumPlugin.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //    ListView依赖
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //tab页面依赖:<com.flyco.tablayout.CommonTabLayout/>
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //下拉刷新
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    //Bmob
+    implementation 'io.github.bmob:android-sdk:3.8.2'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.8"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //Zxing
+    implementation 'com.king.zxing:zxing-lite:2.0.3'
+}

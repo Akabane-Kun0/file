@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">校园APP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="schoolCalendar">
+        \t\t\t\t1.2021年3月1日本科、专科、研究生老生报到注册，2日正式上课。\n
+        \t\t\t\t2.2021年3月4日研究生新生报到注册（3月9日正式上课），2月28日本科、专科新生报到注册（3月16日正式上课）。\n
+        \t\t\t\t3.“清明节”放假一天，“劳动节”放假三天，具体时间另行通知。\n
+        \t\t\t\t4.2021年7月4日至7月12日期末考试。\n
+        \t\t\t\t5.2021年7月13日至8月31日寒假。\n
+    </string>
+
+    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+
+    <!-- 字体 -->
+    <string name="PingFang_SC_Medium">PingFang-SC-Medium</string>
+    <string name="PingFangSC_Regular">PingFangSC-Regular</string>
+    <string name="PingFangSC_Semibold">PingFangSC-Semibold</string>
+    <!-- 建议检索 -->
+    <string name="in">在</string>
+    <string name="search">市内找</string>
+    <string name="defaultCity">合肥</string>
+    <string name="search_poi">检索</string>
+
+    <string name="demo_name_suggestion_search">地点检索</string>
+</resources>
